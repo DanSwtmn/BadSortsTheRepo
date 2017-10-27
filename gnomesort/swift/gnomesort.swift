@@ -7,7 +7,11 @@
 
 import Foundation
 
+var test = [2,3,5,1,9,6,8,7,0]
+
 func gnomes(list:inout [Int]){
+    print("Input list -> \(list)")
+    print("Running...")
     var i = 0
     while list != list.sorted(){
         if i == 0{
@@ -20,6 +24,7 @@ func gnomes(list:inout [Int]){
             i -= 1
         }
     }
+    print("Sorted list -> \(list)")
 }
-
+gnomes(list: &test)
 
